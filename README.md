@@ -10,9 +10,11 @@ https://towardsdatascience.com/using-ml-for-holiday-planning-summarising-airbnb-
 
 Extracting the most important sentences from an article using word embeddings.
 
-Siraj:
 
-https://www.youtube.com/watch?v=ogrJaOIuBx4
 
-Using word embeddings feeding into a seq2seq model.
-Encoder/decoder creating new sentences.
+
+No Time Like the Present: Methods for Generating Colourful and Factual Multilingual News Headlines
+
+https://helda.helsinki.fi//bitstream/handle/10138/303715/iccc_proceedings_2019_258.pdf?sequence=1
+
+
