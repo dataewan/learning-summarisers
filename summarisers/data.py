@@ -42,7 +42,12 @@ def get_text(lines):
     Returns: list of strings
 
     """
-    return [i.strip() for i in lines[2:]]
+    text = [i.strip() for i in lines[2:]]
+    text = [
+        i for i in text
+        if i != ""
+    ]
+    return text
 
 
 def process_body(filename):
@@ -84,7 +89,6 @@ def process():
     records = []
     files = find_files()
     for idx, filename in enumerate(files):
-        logging.info(f"Processing {filename}")
         category = get_category(filename)
         headline, text = process_body(filename)
 

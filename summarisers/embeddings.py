@@ -4,6 +4,7 @@ import tensorflow as tf
 import tensorflow_hub as hub
 import pickle
 from tqdm import tqdm
+import random
 
 EMBEDDING_FILENAME = "./data/embeddings.pkl"
 
@@ -99,6 +100,7 @@ def process_documents():
     """Extract sentence embeddings for each document in the corpus
     """
     records = data.get_records()
+    records = random.sample(records, 40)
     nlp = setup_nlp()
     embed = embedding_function()
     sentences_w_embeddings = []
